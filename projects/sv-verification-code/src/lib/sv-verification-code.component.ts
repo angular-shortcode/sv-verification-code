@@ -23,14 +23,14 @@ export class SvVerificationCodeComponent implements OnChanges {
   @Input() digitOnly = true;
   @Input() autofocus = true;
   @Input() numberOfDigit = 5;
-  @Output() verifyText = new EventEmitter();
   @Output() enter = new EventEmitter();
-  @ViewChildren('input') inputs: QueryList<ElementRef>;
+  @Output() verifyText = new EventEmitter();
+  @ViewChildren('input') inputs: QueryList<ElementRef> = [] as any;
 
   verified = false;
   verificationList: Array<Verification> = [];
 
-  constructor() { }
+  constructor() {}
 
   ngOnChanges(changes: SimpleChanges): void {
     this.verificationList = [];

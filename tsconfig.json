@@ -16,6 +16,12 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
+    "paths": {
+      "sv-verification-code": [
+        "dist/sv-verification-code/sv-verification-code",
+        "dist/sv-verification-code"
+      ]
+    },
     "lib": [
       "es2018",
       "dom"

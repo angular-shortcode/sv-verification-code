@@ -3,5 +3,46 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-  }
+    "sv-verification-code": {
+      "projectType": "library",
+      "root": "projects/sv-verification-code",
+      "sourceRoot": "projects/sv-verification-code/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/sv-verification-code/tsconfig.lib.json",
+            "project": "projects/sv-verification-code/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/sv-verification-code/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/sv-verification-code/src/test.ts",
+            "tsConfig": "projects/sv-verification-code/tsconfig.spec.json",
+            "karmaConfig": "projects/sv-verification-code/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/sv-verification-code/tsconfig.lib.json",
+              "projects/sv-verification-code/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "sv-verification-code"
 }
