@@ -6,25 +6,25 @@
 ![](https://img.shields.io/github/stars/pandao/editor.md.svg)
 
 
-#SvVerificationCode
+# SvVerificationCode
 
 ## Table of Contents
 
-- [Live Demo](#demo) 
-  
+- [Live Demo](#demo)
+
 - [Installation](#installation)
 - [Options](#options)
 - [Usage](#usage)
 - [Example](#example)
 - [Author](#author)
 - [Contact](#conatact)
-  
+
   [comment]: <> (  | [Stackblitz]&#40;#demo&#41;)
 
 
 <a name="demo"/>
 
-##Demo
+## Demo
 ***
 
 ✨ [Angular Shortcode](https://angular-shortcode.web.app/home/verification) ✨
@@ -34,7 +34,7 @@
 
 <a name="installation"/>
 
-##Installation
+## Installation
 ***
 Install with NPM
 
@@ -45,7 +45,7 @@ npm i sv-verification-code
 
 <a name="options"/>
 
-##Options
+## Options
 ***
 
 | Name                  | Type            | Default Value  |Description |
@@ -60,7 +60,7 @@ npm i sv-verification-code
 
 <a name="usage"/>
 
-##Usage
+## Usage
 ***
 
 Import SvVerificationCodeModule in your app
@@ -80,7 +80,7 @@ export class AppModule { }
 
 <a name="example"/>
 
-##Example
+## Example
 ***
 ```html
 <sv-verification-code
@@ -101,14 +101,14 @@ verifyText(event): void {
 
 <a name="auther"/>
 
-##Author
+## Author
 ***
 `Mehdi Sadeghian` `Samira Vahidi`
 
 
 <a name="conatact"/>
 
-##Contact
+## Contact
 ***
 `github`
 - [Angular Shortcode](https://github.com/angular-shorcode/)
