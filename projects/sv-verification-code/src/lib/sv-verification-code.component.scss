@@ -1,0 +1,30 @@
+.verification {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  &-area {
+    border: 1px solid #E2E2E2;
+    border-radius: 4px;
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    font-size: 1em;
+    margin-left: 1.231em;
+    box-sizing: border-box;
+    outline: none;
+    color: #3c3c3c;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:hover {
+      border-width: 2px;
+      border-color: #3c3c3c;
+    }
+    &:focus {
+      border-width: 2px;
+      border-color: #0dbedd;
+    }
+  }
+}

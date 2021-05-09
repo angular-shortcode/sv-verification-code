@@ -1,0 +1,11 @@
+<div class="verification">
+  <input #input *ngFor="let item of verificationList; index as index"
+         class="verification-area"
+         type="text"
+         [autofocus]="autofocus && index === 0"
+         [(ngModel)]="item.value"
+         maxlength="1"
+         (keydown)="checkKeyCode($event)"
+         (keyup)="jumpToNext(index, $event)">
+</div>
+
